@@ -3,10 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:DemoTitleView" 
              x:Class="DemoTitleView.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-               HorizontalOptions="Center" 
-               VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="https://goo.gl/xK8MUt" 
+                   WidthRequest="40" 
+                   HeightRequest="40"/>
+            <Label Text="Juliano Custodio" VerticalTextAlignment="Center"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
 </ContentPage>
